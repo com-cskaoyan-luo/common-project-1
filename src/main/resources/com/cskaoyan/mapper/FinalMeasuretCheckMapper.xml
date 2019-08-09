@@ -11,6 +11,17 @@
     <result column="result" jdbcType="VARCHAR" property="result" />
     <result column="note" jdbcType="VARCHAR" property="note" />
   </resultMap>
+  <resultMap id="MeasureCheckMap" type="com.cskaoyan.bean.FinalMeasuretCheck">
+    <result column="f_measure_check_id" property="fMeasureCheckId"/>
+    <result column="order_id" property="orderId"/>
+    <result column="check_item" property="checkItem"/>
+    <result column="cdate" property="cdate"/>
+    <result column="measure_data" property="measureData"/>
+    <result column="emp_id" property="empId"/>
+    <result column="result" property="result"/>
+    <result column="note" property="note"/>
+    <result column="emp_name" property="empName"/>
+  </resultMap>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -255,4 +266,18 @@
       note = #{note,jdbcType=VARCHAR}
     where f_measure_check_id = #{fMeasureCheckId,jdbcType=VARCHAR}
   </update>
+  <select id="queryAllFinalMeasureCheck" resultMap="MeasureCheckMap">
+    select 
+    fmc.f_measure_check_id,
+    fmc.order_id,
+    fmc.check_item,
+    fmc.cdate,
+    fmc.measure_data,
+    fmc.emp_id,
+    fmc.result,
+    fmc.note,
+    em.emp_name
+    from final_measuret_check fmc
+    left join employee em on fmc.emp_id=em.emp_id
+  </select>
 </mapper>

@@ -18,6 +18,16 @@ public class FinalMeasuretCheck {
     private String result;
 
     private String note;
+    //自己加的属性
+    private String empName;
+
+    public String getEmpName() {
+        return empName;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
 
     public String getfMeasureCheckId() {
         return fMeasureCheckId;

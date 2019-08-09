@@ -1,5 +1,7 @@
 package com.cskaoyan.mapper;
 
+
+import com.cskaoyan.bean.Employee;
 import com.cskaoyan.bean.UnqualifyApply;
 import com.cskaoyan.bean.UnqualifyApplyExample;
 import java.util.List;
@@ -27,4 +29,6 @@ public interface UnqualifyApplyMapper {
     int updateByPrimaryKeySelective(UnqualifyApply record);
 
     int updateByPrimaryKey(UnqualifyApply record);
+    List<UnqualifyApply> queryAll();
+    Employee queryemployee(@Param("id") String id);
 }

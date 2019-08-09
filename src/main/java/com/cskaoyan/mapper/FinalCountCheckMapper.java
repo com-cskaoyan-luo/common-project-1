@@ -27,4 +27,6 @@ public interface FinalCountCheckMapper {
     int updateByPrimaryKeySelective(FinalCountCheck record);
 
     int updateByPrimaryKey(FinalCountCheck record);
+
+    List<FinalCountCheck> queryAllFinalCountCheck();
 }
