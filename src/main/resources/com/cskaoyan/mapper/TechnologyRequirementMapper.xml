@@ -68,6 +68,9 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
+    technology_requirement_id, technology_id,requirement, add_time, revise_time
+  </sql>
+  <sql id="Base_Column_List2">
     technology_requirement_id, technology_requirement.technology_id, technology_name,requirement, add_time, revise_time
   </sql>
   <select id="selectByExample" parameterType="com.cskaoyan.bean.TechnologyRequirementExample" resultMap="BaseResultMap">
@@ -101,13 +104,13 @@
     <!--</if>-->
   <!--</select>-->
   <select id="selectAll" resultMap="BaseResultMap">
-    select <include refid="Base_Column_List" /> from technology_requirement left join technology on technology_requirement.technology_id = technology.technology_id order by technology_requirement_id asc
+    select <include refid="Base_Column_List2" /> from technology_requirement left join technology on technology_requirement.technology_id = technology.technology_id order by technology_requirement_id asc
   </select>
   <select id="searchById" parameterType="java.lang.String" resultMap="BaseResultMap">
-    select <include refid="Base_Column_List" /> from technology_requirement left join technology on technology_requirement.technology_id = technology.technology_id where technology_requirement_id like #{serchValue,jdbcType=VARCHAR} order by technology_requirement_id asc
+    select <include refid="Base_Column_List2" /> from technology_requirement left join technology on technology_requirement.technology_id = technology.technology_id where technology_requirement_id like #{serchValue,jdbcType=VARCHAR} order by technology_requirement_id asc
   </select>
   <select id="searchByName" parameterType="java.lang.String" resultMap="BaseResultMap">
-    select <include refid="Base_Column_List" /> from technology_requirement left join technology on technology_requirement.technology_id = technology.technology_id where technology_name like #{serchValue,jdbcType=VARCHAR} order by technology_requirement_id asc
+    select <include refid="Base_Column_List2" /> from technology_requirement left join technology on technology_requirement.technology_id = technology.technology_id where technology_name like #{serchValue,jdbcType=VARCHAR} order by technology_requirement_id asc
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 

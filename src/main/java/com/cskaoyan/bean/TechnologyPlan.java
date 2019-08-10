@@ -7,6 +7,8 @@ public class TechnologyPlan {
 
     private String technologyId;
 
+    private String technologyName;
+
     private Integer batchAmount;
 
     private Date startPlan;
@@ -18,6 +20,14 @@ public class TechnologyPlan {
     private Date technologyPlanStart;
 
     private Date technologyPlanEnd;
+
+    public String getTechnologyName() {
+        return technologyName;
+    }
+
+    public void setTechnologyName(String technologyName) {
+        this.technologyName = technologyName;
+    }
 
     public String getTechnologyPlanId() {
         return technologyPlanId;

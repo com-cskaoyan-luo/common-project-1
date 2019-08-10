@@ -4,6 +4,7 @@
   <resultMap id="BaseResultMap" type="com.cskaoyan.bean.TechnologyPlan">
     <id column="technology_plan_id" jdbcType="VARCHAR" property="technologyPlanId" />
     <result column="technology_id" jdbcType="VARCHAR" property="technologyId" />
+    <result column="technology_name" jdbcType="VARCHAR" property="technologyName" />
     <result column="batch_amount" jdbcType="INTEGER" property="batchAmount" />
     <result column="start_plan" jdbcType="TIMESTAMP" property="startPlan" />
     <result column="end_plan" jdbcType="TIMESTAMP" property="endPlan" />
@@ -70,7 +71,11 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    technology_plan_id, technology_id, batch_amount, start_plan, end_plan, commit_plan, 
+    technology_plan_id, technology_id, batch_amount, start_plan, end_plan, commit_plan,
+    technology_plan_start, technology_plan_end
+  </sql>
+  <sql id="Base_Column_List2">
+    technology_plan_id, technology.technology_id,technology_name, batch_amount, start_plan, end_plan, commit_plan,
     technology_plan_start, technology_plan_end
   </sql>
   <select id="selectByExample" parameterType="com.cskaoyan.bean.TechnologyPlanExample" resultMap="BaseResultMap">
@@ -93,6 +98,29 @@
     from technology_plan
     where technology_plan_id = #{technologyPlanId,jdbcType=VARCHAR}
   </select>
+
+
+
+
+
+
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List2" /> from technology_plan left join technology on technology_plan.technology_id = technology.technology_id order by technology_plan_id asc
+  </select>
+  <select id="searchById" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List2" /> from technology_plan left join technology on technology_plan.technology_id = technology.technology_id where technology_plan_id like #{serchValue,jdbcType=VARCHAR} order by technology_plan_id asc
+  </select>
+  <select id="searchByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List2" /> from technology_plan left join technology on technology_plan.technology_id = technology.technology_id where technology_name like #{serchValue,jdbcType=VARCHAR} order by technology_plan_id asc
+  </select>
+
+
+
+
+
+
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from technology_plan
     where technology_plan_id = #{technologyPlanId,jdbcType=VARCHAR}

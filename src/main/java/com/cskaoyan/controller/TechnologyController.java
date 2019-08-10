@@ -1,24 +1,20 @@
 package com.cskaoyan.controller;
 
-import com.cskaoyan.Service.Impl.TechnologyServiceImpl;
-import com.cskaoyan.Service.TechnologyService;
+import com.cskaoyan.service.TechnologyService;
 import com.cskaoyan.bean.PageBean;
 import com.cskaoyan.bean.Technology;
 import com.cskaoyan.bean.TechnologyExample;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 public class TechnologyController {
@@ -43,6 +39,17 @@ public class TechnologyController {
 
 
         return pageBean;
+    }
+    @RequestMapping("technology/get/{technologyId}")
+    @ResponseBody
+    public Technology getTechnology(@PathVariable("technologyId") String technologyId){
+        return technologyService.getTechnologyById(technologyId);
+    }
+    @RequestMapping("technology/get_data")
+    @ResponseBody
+    public List<Technology> getdata(){
+        List<Technology> list = technologyService.findAllTechnology();
+        return list;
     }
 //新增
     @RequestMapping("technology/add_judge")
@@ -96,6 +103,9 @@ public class TechnologyController {
             TechnologyExample technologyExample = new TechnologyExample();
             technologyExample.createCriteria().andTechnologyIdEqualTo(id);
             deleteStatus = technologyService.deleteTechnologies(technologyExample);
+            if(deleteStatus==false){
+                break;
+            }
         }
         return getMap(deleteStatus);
     }

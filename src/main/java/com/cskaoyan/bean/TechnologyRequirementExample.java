@@ -149,7 +149,6 @@ public class TechnologyRequirementExample {
             addCriterion("technology_requirement_id like", value, "technologyRequirementId");
             return (Criteria) this;
         }
-
         public Criteria andTechnologyRequirementIdNotLike(String value) {
             addCriterion("technology_requirement_id not like", value, "technologyRequirementId");
             return (Criteria) this;

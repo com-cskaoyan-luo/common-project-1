@@ -19,7 +19,7 @@
 	        <tr>
 	            <td>收入数量:</td>
 	            <td>
-	            	<input class="easyui-numberbox" type="text" name="ammount" style="width: 160px;"/>
+	            	<input class="easyui-numberbox" name="amount" style="width: 160px;"/>
 	            </td>
 	        </tr>
 	        </tr>
@@ -31,13 +31,15 @@
 	        <tr>
 	            <td>发送者:</td>
 	            <td>
-	            	<input class="easyui-textbox" type="text" name="sender" style="width: 160px;"/>
+	            	<input class="easyui-textbox" type="text" name="sender"
+						   data-options="min:1,max:99999999,precision:2,required:true" style="width: 160px;"/>
 	            </td>
 	        </tr>
 	        <tr>
 	            <td>接收者:</td>
 	            <td>
-	            	<input class="easyui-textbox" type="text" name="receiver" style="width: 160px;"/>
+	            	<input class="easyui-textbox" type="text" name="receiver"
+						   data-options="min:1,max:99999999,precision:2,required:true" style="width: 160px;"/>
 	            </td>
 	        </tr>
 	        <tr>

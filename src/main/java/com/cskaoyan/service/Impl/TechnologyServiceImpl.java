@@ -1,6 +1,6 @@
-package com.cskaoyan.Service.Impl;
+package com.cskaoyan.service.impl;
 
-import com.cskaoyan.Service.TechnologyService;
+import com.cskaoyan.service.TechnologyService;
 import com.cskaoyan.bean.Technology;
 import com.cskaoyan.bean.TechnologyExample;
 import com.cskaoyan.mapper.TechnologyMapper;
@@ -8,8 +8,6 @@ import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 @Service
 public class TechnologyServiceImpl implements TechnologyService {

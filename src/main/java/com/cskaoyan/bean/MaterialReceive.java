@@ -2,16 +2,14 @@ package com.cskaoyan.bean;
 
 import java.util.Date;
 
-public class MaterialConsume {
-    private String consumeId;
-
-    private String workId;
+public class MaterialReceive {
+    private String receiveId;
 
     private String materialId;
 
-    private Integer consumeAmount;
+    private Integer amount;
 
-    private Date consumeDate;
+    private Date receiveDate;
 
     private String sender;
 
@@ -21,8 +19,6 @@ public class MaterialConsume {
 
     private Material material;
 
-    private Work work;
-
     public Material getMaterial() {
         return material;
     }
@@ -31,28 +27,12 @@ public class MaterialConsume {
         this.material = material;
     }
 
-    public Work getWork() {
-        return work;
+    public String getReceiveId() {
+        return receiveId;
     }
 
-    public void setWork(Work work) {
-        this.work = work;
-    }
-
-    public String getConsumeId() {
-        return consumeId;
-    }
-
-    public void setConsumeId(String consumeId) {
-        this.consumeId = consumeId == null ? null : consumeId.trim();
-    }
-
-    public String getWorkId() {
-        return workId;
-    }
-
-    public void setWorkId(String workId) {
-        this.workId = workId == null ? null : workId.trim();
+    public void setReceiveId(String receiveId) {
+        this.receiveId = receiveId == null ? null : receiveId.trim();
     }
 
     public String getMaterialId() {
@@ -63,20 +43,20 @@ public class MaterialConsume {
         this.materialId = materialId == null ? null : materialId.trim();
     }
 
-    public Integer getConsumeAmount() {
-        return consumeAmount;
+    public Integer getAmount() {
+        return amount;
     }
 
-    public void setConsumeAmount(Integer consumeAmount) {
-        this.consumeAmount = consumeAmount;
+    public void setAmount(Integer amount) {
+        this.amount = amount;
     }
 
-    public Date getConsumeDate() {
-        return consumeDate;
+    public Date getReceiveDate() {
+        return receiveDate;
     }
 
-    public void setConsumeDate(Date consumeDate) {
-        this.consumeDate = consumeDate;
+    public void setReceiveDate(Date receiveDate) {
+        this.receiveDate = receiveDate;
     }
 
     public String getSender() {

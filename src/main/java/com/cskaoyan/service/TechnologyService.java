@@ -1,4 +1,4 @@
-package com.cskaoyan.Service;
+package com.cskaoyan.service;
 
 import com.cskaoyan.bean.Technology;
 import com.cskaoyan.bean.TechnologyExample;

@@ -1,21 +1,17 @@
 package com.cskaoyan.controller;
 
-import com.cskaoyan.Service.Impl.TechnologyServiceImpl;
-import com.cskaoyan.Service.TechnologyRequirementService;
-import com.cskaoyan.Service.TechnologyService;
+import com.cskaoyan.service.TechnologyRequirementService;
+import com.cskaoyan.service.TechnologyService;
 import com.cskaoyan.bean.*;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 public class TechnologyRequirementController {
@@ -43,11 +39,7 @@ public class TechnologyRequirementController {
         return pageBean;
     }
 
-    @RequestMapping("technology/get/{technologyId}")
-    @ResponseBody
-    public Technology getTechnology(@PathVariable("technologyId") String technologyId){
-        return technologyService.getTechnologyById(technologyId);
-    }
+
     //新增
     @RequestMapping("technologyRequirement/add_judge")
     @ResponseBody
@@ -106,6 +98,9 @@ public class TechnologyRequirementController {
             TechnologyRequirementExample technologyRequirementExample = new TechnologyRequirementExample();
             technologyRequirementExample.createCriteria().andTechnologyRequirementIdEqualTo(id);
             deleteStatus = technologyRequirementService.deleteTechnologyRequirements(technologyRequirementExample);
+            if(deleteStatus==false){
+                break;
+            }
         }
         return getMap(deleteStatus);
     }
