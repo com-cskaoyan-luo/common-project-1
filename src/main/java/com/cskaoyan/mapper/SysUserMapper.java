@@ -27,4 +27,10 @@ public interface SysUserMapper {
     int updateByPrimaryKeySelective(SysUser record);
 
     int updateByPrimaryKey(SysUser record);
+
+    String getRolenameByUserId(String id);
+
+    String getPermission(@Param("name") String rolename);
+
+    String getPermissionName(@Param("id") String id);
 }

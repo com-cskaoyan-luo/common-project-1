@@ -158,7 +158,12 @@ public class WorkController {
         return "work_list";
     }
 
-
+	@RequestMapping("get/{workId}")
+    @ResponseBody
+    public Work getProcess(@PathVariable("workId") String workId){
+        return workService.getWorkById(workId);
+    }
+   
     @RequestMapping("list")
     @ResponseBody
     public PageBean<Work> queryWork(int page, int rows){

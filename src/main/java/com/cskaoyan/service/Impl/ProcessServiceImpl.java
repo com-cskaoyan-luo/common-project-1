@@ -23,7 +23,7 @@ public class ProcessServiceImpl implements ProcessService {
 
     @Override
     public Process getProcessById(String processId) {
-        return null;
+        return processMapper.selectByPrimaryKey(processId);
     }
 
     @Override

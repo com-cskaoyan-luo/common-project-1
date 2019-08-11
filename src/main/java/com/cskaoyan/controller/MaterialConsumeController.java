@@ -21,12 +21,8 @@ public class MaterialConsumeController {
     TechnologyService technologyService;
     //展示
     @RequestMapping("materialConsume/find")
-    public String findList(HttpServletRequest request){
-        List<String> list = new ArrayList<>();
-        list.add("materialConsume:add");
-        list.add("materialConsume:edit");
-        list.add("materialConsume:delete");
-        request.getSession().setAttribute("sysPermissionList",list);
+    public String findList(){
+
         return "materialConsume_list";
     }
     @RequestMapping("materialConsume/list")

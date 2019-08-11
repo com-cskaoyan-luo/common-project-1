@@ -22,7 +22,10 @@ public class WorkServiceImpl implements WorkService {
     public List<Work> queryAllWork() {
         return workMapper.selectByExample(workExample);
     }
-
+	@Override
+    public Work getWorkById(String workId) {
+        return workMapper.selectByPrimaryKey(workId);
+    }
     //作业管理页面多对多查询
     @Override
     public List<Work> queryWork(int page, int rows) {

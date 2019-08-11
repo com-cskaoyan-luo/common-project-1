@@ -1,5 +1,6 @@
 package com.cskaoyan.controller;
 
+import com.cskaoyan.bean.ActiveUser;
 import com.cskaoyan.service.MaterialReceiveService;
 import com.cskaoyan.bean.PageBean;
 import com.cskaoyan.bean.MaterialReceive;
@@ -21,12 +22,8 @@ public class MaterialReceiveController {
     MaterialReceiveService materialReceiveService;
     //展示
     @RequestMapping("materialReceive/find")
-    public String findList(HttpServletRequest request){
-        List<String> list = new ArrayList<>();
-        list.add("materialReceive:add");
-        list.add("materialReceive:edit");
-        list.add("materialReceive:delete");
-        request.getSession().setAttribute("sysPermissionList",list);
+    public String findList(){
+
         return "materialReceive_list";
     }
     @RequestMapping("materialReceive/list")

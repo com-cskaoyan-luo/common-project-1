@@ -8,6 +8,7 @@ public interface WorkService {
     List<Work> queryAllWork();
 
     List<Work> queryWork(int page, int rows);
+<<<<<<< HEAD
 
     Work queryWorkById(String id);
 
@@ -24,4 +25,8 @@ public interface WorkService {
     List<Work> searchWorkByDevice(String searchValue, int page, int rows);
 
     List<Work> searchWorkByProcess(String searchValue, int page, int rows);
+=======
+	
+	Work getWorkById(String workId);
+>>>>>>> d3da23b01da95b346bbcf0d6894aac5ae3e2fe97
 }

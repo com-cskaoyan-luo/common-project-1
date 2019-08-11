@@ -22,12 +22,8 @@ public class ProcessController {
     ProcessService processService;
     //展示
     @RequestMapping("process/find")
-    public String findList(HttpServletRequest request){
-        List<String> list = new ArrayList<>();
-        list.add("process:add");
-        list.add("process:edit");
-        list.add("process:delete");
-        request.getSession().setAttribute("sysPermissionList",list);
+    public String findList(){
+
         return "process_list";
     }
     @RequestMapping("process/list")

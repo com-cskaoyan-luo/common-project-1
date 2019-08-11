@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -42,14 +43,17 @@ public class IndexController {
         map.put("msg",msg);
         if("true".equals(msg)) {
             ActiveUser user = sysUserService.getUser(username,password);
+            List<String> sysPermissionList = sysUserService.getPermission(user);
             request.getSession().setAttribute("activeUser", user);
+            request.getSession().setAttribute("sysPermissionList",sysPermissionList);
         }
         return map;
     }
     @RequestMapping(value = "logout")
     public String logout(HttpServletRequest request){
         request.getSession().setAttribute("activeUser", null);
-
+        request.getSession().setAttribute("sysPermissionList", null);
+        request.getSession().setAttribute("validateCode", null);
         return "login";
     }
 }
