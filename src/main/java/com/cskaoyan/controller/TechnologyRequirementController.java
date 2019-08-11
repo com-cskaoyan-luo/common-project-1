@@ -22,11 +22,6 @@ public class TechnologyRequirementController {
     //展示
     @RequestMapping("technologyRequirement/find")
     public String findList(HttpServletRequest request){
-        List<String> list = new ArrayList<>();
-        list.add("technologyRequirement:add");
-        list.add("technologyRequirement:edit");
-        list.add("technologyRequirement:delete");
-        request.getSession().setAttribute("sysPermissionList",list);
         return "technologyRequirement_list";
     }
     @RequestMapping("technologyRequirement/list")

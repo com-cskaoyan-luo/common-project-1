@@ -27,4 +27,12 @@ public interface TechnologyRequirementMapper {
     int updateByPrimaryKeySelective(TechnologyRequirement record);
 
     int updateByPrimaryKey(TechnologyRequirement record);
+
+//    List<TechnologyRequirement> selectAllByExample(TechnologyRequirementExample technologyRequirementExample);
+
+    List<TechnologyRequirement> selectAll();
+
+    List<TechnologyRequirement> searchById(String searchValue);
+
+    List<TechnologyRequirement> searchByName(String searchValue);
 }

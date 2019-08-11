@@ -25,12 +25,7 @@ public class TechnologyPlanController {
     TechnologyService technologyService;
     //展示
     @RequestMapping("technologyPlan/find")
-    public String findList(HttpServletRequest request){
-        List<String> list = new ArrayList<>();
-        list.add("technologyPlan:add");
-        list.add("technologyPlan:edit");
-        list.add("technologyPlan:delete");
-        request.getSession().setAttribute("sysPermissionList",list);
+    public String findList(){
         return "technologyPlan_list";
     }
     @RequestMapping("technologyPlan/list")

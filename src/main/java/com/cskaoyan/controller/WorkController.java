@@ -30,7 +30,11 @@ public class WorkController {
     public String find(){
         return "work_list";
     }
-
+	@RequestMapping("get/{workId}")
+    @ResponseBody
+    public Work getProcess(@PathVariable("workId") String workId){
+        return workService.getWorkById(workId);
+    }
     @ResponseBody
     @RequestMapping("list")
     public PageBean<Work> queryWork(int page, int rows){

@@ -1,5 +1,6 @@
 package com.cskaoyan.controller;
 
+import com.cskaoyan.bean.ActiveUser;
 import com.cskaoyan.service.MaterialService;
 import com.cskaoyan.bean.PageBean;
 import com.cskaoyan.bean.Material;
@@ -20,14 +21,11 @@ import java.util.List;
 public class MaterialController {
     @Autowired
     MaterialService materialService;
+
     //展示
     @RequestMapping("material/find")
     public String findList(HttpServletRequest request){
-        List<String> list = new ArrayList<>();
-        list.add("material:add");
-        list.add("material:edit");
-        list.add("material:delete");
-        request.getSession().setAttribute("sysPermissionList",list);
+
         return "material_list";
     }
     @RequestMapping("material/list")

@@ -22,12 +22,7 @@ public class TechnologyController {
     TechnologyService technologyService;
 //展示
     @RequestMapping("technology/find")
-    public String findList(HttpServletRequest request){
-        List<String> list = new ArrayList<>();
-        list.add("technology:add");
-        list.add("technology:edit");
-        list.add("technology:delete");
-        request.getSession().setAttribute("sysPermissionList",list);
+    public String findList(){
         return "technology_list";
     }
     @RequestMapping("technology/list")
