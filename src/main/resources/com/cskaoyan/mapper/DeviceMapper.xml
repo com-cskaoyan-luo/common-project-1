@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cskaoyan.mapper.DeviceMapper">
+
+  <!--多表分次查询-->
+  <select id="selectDeviceById" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from device
+    where device_id = #{zz}
+  </select>
   <resultMap id="BaseResultMap" type="com.cskaoyan.bean.Device">
     <id column="device_id" jdbcType="VARCHAR" property="deviceId" />
     <result column="device_name" jdbcType="VARCHAR" property="deviceName" />

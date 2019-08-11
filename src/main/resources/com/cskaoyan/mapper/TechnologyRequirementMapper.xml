@@ -3,8 +3,7 @@
 <mapper namespace="com.cskaoyan.mapper.TechnologyRequirementMapper">
   <resultMap id="BaseResultMap" type="com.cskaoyan.bean.TechnologyRequirement">
     <id column="technology_requirement_id" jdbcType="VARCHAR" property="technologyRequirementId" />
-    <result column="technology_id" jdbcType="VARCHAR" property="technologyId"/>
-    <result column="technology_name" jdbcType="VARCHAR" property="technologyName" />
+    <result column="technology_id" jdbcType="VARCHAR" property="technologyId" />
     <result column="requirement" jdbcType="VARCHAR" property="requirement" />
     <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
     <result column="revise_time" jdbcType="TIMESTAMP" property="reviseTime" />
@@ -68,10 +67,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    technology_requirement_id, technology_id,requirement, add_time, revise_time
-  </sql>
-  <sql id="Base_Column_List2">
-    technology_requirement_id, technology_requirement.technology_id, technology_name,requirement, add_time, revise_time
+    technology_requirement_id, technology_id, requirement, add_time, revise_time
   </sql>
   <select id="selectByExample" parameterType="com.cskaoyan.bean.TechnologyRequirementExample" resultMap="BaseResultMap">
     select
@@ -86,31 +82,6 @@
     <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
-  </select>
-  <!--<select id="selectAllByExample" parameterType="com.cskaoyan.bean.TechnologyRequirementExample" resultMap="BaseResultMap">-->
-    <!--select-->
-    <!--<if test="distinct">-->
-      <!--distinct-->
-    <!--</if>-->
-    <!--<include refid="Base_Column_List" />-->
-    <!--from technology_requirement-->
-    <!--LEFT JOIN technology-->
-    <!--ON technology_requirment.technology_id = technology.technology_id-->
-    <!--<if test="_parameter != null">-->
-      <!--<include refid="Example_Where_Clause" />-->
-    <!--</if>-->
-    <!--<if test="orderByClause != null">-->
-      <!--order by ${orderByClause}-->
-    <!--</if>-->
-  <!--</select>-->
-  <select id="selectAll" resultMap="BaseResultMap">
-    select <include refid="Base_Column_List2" /> from technology_requirement left join technology on technology_requirement.technology_id = technology.technology_id order by technology_requirement_id asc
-  </select>
-  <select id="searchById" parameterType="java.lang.String" resultMap="BaseResultMap">
-    select <include refid="Base_Column_List2" /> from technology_requirement left join technology on technology_requirement.technology_id = technology.technology_id where technology_requirement_id like #{serchValue,jdbcType=VARCHAR} order by technology_requirement_id asc
-  </select>
-  <select id="searchByName" parameterType="java.lang.String" resultMap="BaseResultMap">
-    select <include refid="Base_Column_List2" /> from technology_requirement left join technology on technology_requirement.technology_id = technology.technology_id where technology_name like #{serchValue,jdbcType=VARCHAR} order by technology_requirement_id asc
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 

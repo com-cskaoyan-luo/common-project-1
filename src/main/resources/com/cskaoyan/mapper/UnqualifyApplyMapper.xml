@@ -11,38 +11,6 @@
     <result column="apply_date" jdbcType="TIMESTAMP" property="applyDate" />
     <result column="note" jdbcType="VARCHAR" property="note" />
   </resultMap>
-  <resultMap id="queryMap" type="com.cskaoyan.bean.UnqualifyApply">
-    <result column="unqualify_apply_id"  property="unqualifyApplyId"/>
-    <result column="product_id"  property="productId"/>
-    <result column="unqualify_item"  property="unqualifyItem"/>
-    <result column="unqualify_count"  property="unqualifyCount"/>
-    <result column="assembly_date"  property="assemblyDate"/>
-    <result column="apply_date"  property="applyDate"/>
-    <result column="emp_id"  property="empId"/>
-    <result column="note"  property="note"/>
-    <result column="emp_name" property="empName"/>
-    <result column="product_name" property="productName"/>
-  </resultMap>
-  <resultMap id="employee" type="com.cskaoyan.bean.Employee">
-    <result column="emp_id" property="empId"/>
-    <result column="emp_name" property="empName"/>
-    <result column="sex" property="sex"/>
-    <result column="id_code" property="idCode"/>
-    <result column="birthday" property="birthday"/>
-    <result column="join_date" property="joinDate"/>
-    <result column="status" property="status"/>
-    <result column="education" property="education"/>
-    <result column="degree" property="degree"/>
-    <result column="major" property="major"/>
-    <result column="graduate_school" property="graduateSchool"/>
-    <result column="education_form" property="educationForm"/>
-    <result column="department_id" property="departmentId"/>
-    <collection property="department" ofType="com.cskaoyan.bean.Department">
-      <result column="department_name" property="departmentName"/>
-      <result column="note" property="note"/>
-      <result column="department_id" property="departmentId"/>
-    </collection>
-  </resultMap>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -288,42 +256,4 @@
       note = #{note,jdbcType=VARCHAR}
     where unqualify_apply_id = #{unqualifyApplyId,jdbcType=VARCHAR}
   </update>
-  <select id="queryAll" parameterType="com.cskaoyan.bean.UnqualifyApply" resultMap="queryMap">
-  SELECT
-   un.unqualify_apply_id,
-   un.product_id,
-   un.unqualify_item,
-   un.unqualify_count,
-   un.assembly_date,
-   un.emp_id,
-   un.apply_date,
-   un.note,
-   pr.product_name,
-   em.emp_name
-    from unqualify_apply un
-    left join product pr on un.product_id=pr.product_id
-    left join employee em on un.emp_id=em.emp_id
-  </select>
-  <select id="queryemployee" resultMap="employee">
-  select emp_id,
-  em.emp_name,
-  em.sex,
-  em.id_code,
-  em.birthday,
-  em.join_date,
-  em.status,
-  em.education,
-  em.degree,
-  em.major,
-  em.graduate_school,
-  em.education_form,
-  em.department_id,
-  de.department_name,
-  de.note
-  from employee em
-  left join department de on em.department_id=de.department_id
-  <where>
-    em.emp_id=#{id}
-  </where>
-  </select>
 </mapper>
