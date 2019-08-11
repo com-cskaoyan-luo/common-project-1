@@ -13,6 +13,61 @@ public class Work {
 
     private Integer rating;
 
+    //添加三个额外需要的成员变量
+    private Process process;
+
+    private Product product;
+
+    private Device device;
+
+    public String getProductId() {
+        return productId;
+    }
+
+    public void setProductId(String productId) {
+        this.productId = productId;
+    }
+
+    public String getProcessId() {
+        return processId;
+    }
+
+    public void setProcessId(String processId) {
+        this.processId = processId;
+    }
+
+    public String getDeviceId() {
+        return deviceId;
+    }
+
+    public void setDeviceId(String deviceId) {
+        this.deviceId = deviceId;
+    }
+
+    public Process getProcess() {
+        return process;
+    }
+
+    public void setProcess(Process process) {
+        this.process = process;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public Device getDevice() {
+        return device;
+    }
+
+    public void setDevice(Device device) {
+        this.device = device;
+    }
+
     public String getWorkId() {
         return workId;
     }
@@ -29,29 +84,7 @@ public class Work {
         this.processNumber = processNumber == null ? null : processNumber.trim();
     }
 
-    public String getProductId() {
-        return productId;
-    }
 
-    public void setProductId(String productId) {
-        this.productId = productId == null ? null : productId.trim();
-    }
-
-    public String getProcessId() {
-        return processId;
-    }
-
-    public void setProcessId(String processId) {
-        this.processId = processId == null ? null : processId.trim();
-    }
-
-    public String getDeviceId() {
-        return deviceId;
-    }
-
-    public void setDeviceId(String deviceId) {
-        this.deviceId = deviceId == null ? null : deviceId.trim();
-    }
 
     public Integer getRating() {
         return rating;

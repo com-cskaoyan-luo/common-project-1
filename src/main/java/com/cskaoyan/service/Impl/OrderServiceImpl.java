@@ -2,16 +2,13 @@ package com.cskaoyan.service.impl;
 
 import com.cskaoyan.bean.COrder;
 import com.cskaoyan.bean.COrderExample;
-import com.cskaoyan.bean.Custom;
-import com.cskaoyan.bean.CustomExample;
 import com.cskaoyan.mapper.COrderMapper;
-import com.cskaoyan.mapper.CustomMapper;
 import com.cskaoyan.service.OrderService;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -110,5 +107,20 @@ public class OrderServiceImpl implements OrderService {
         String s = "%" + searchValue + "%";
         List<COrder> cOrders = cOrderMapper.selectPageCOrderByProduct(s);
         return cOrders;
+    }
+
+    //get_data的回显
+    @Override
+    public List<COrder> queryAllOrder() {
+        COrderExample cOrderExample = new COrderExample();
+        List<COrder> cOrders = cOrderMapper.selectByExample(cOrderExample);
+        return cOrders;
+    }
+
+    //根据id查询回显单个订单
+    @Override
+    public COrder queryOrderById(String id) {
+        COrder cOrder = cOrderMapper.selectOrderByPrimaryKey(id);
+        return cOrder;
     }
 }

@@ -1,6 +1,7 @@
 package com.cskaoyan.service;
 
 import com.cskaoyan.bean.COrder;
+import org.springframework.core.annotation.Order;
 
 import java.util.List;
 
@@ -20,4 +21,8 @@ public interface OrderService {
     int updateNote(String orderId,String note);
 
     List<COrder> searchOrderByProduct(String searchValue, int page, int rows);
+
+    List<COrder> queryAllOrder();
+
+    COrder queryOrderById(String id);
 }

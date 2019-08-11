@@ -2,10 +2,13 @@ package com.cskaoyan.controller;
 
 import com.cskaoyan.bean.COrder;
 import com.cskaoyan.bean.PageBean;
+import com.cskaoyan.bean.Product;
 import com.cskaoyan.service.impl.OrderServiceImpl;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -19,6 +22,22 @@ import java.util.Map;
 public class OrderController {
     @Autowired
     OrderServiceImpl orderService;
+
+    //根据id查询单个订单进行回显
+    @RequestMapping("get/{id}")
+    @ResponseBody
+    public COrder queryOrderById(@PathVariable String id){
+        COrder cOrder = orderService.queryOrderById(id);
+        return cOrder;
+    }
+
+    //查询所有订单信息进行回显
+    @RequestMapping("get_data")
+    @ResponseBody
+    public List<COrder> queryAllOrder(){
+        List<COrder> cOrders = orderService.queryAllOrder();
+        return cOrders;
+    }
 
     //更新订单要求
     @RequestMapping("update_note")

@@ -15,6 +15,8 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     ProductMapper productMapper;
     ProductExample productExample = new ProductExample();
+
+    //根据id回显单个产品
     @Override
     public Product queryProductById(String id) {
         return productMapper.selectByPrimaryKey(id);
