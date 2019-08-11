@@ -1,5 +1,6 @@
 package com.cskaoyan.mapper;
 
+import com.cskaoyan.bean.Device;
 import com.cskaoyan.bean.DeviceCheck;
 import com.cskaoyan.bean.DeviceCheckExample;
 import java.util.List;
@@ -27,4 +28,10 @@ public interface DeviceCheckMapper {
     int updateByPrimaryKeySelective(DeviceCheck record);
 
     int updateByPrimaryKey(DeviceCheck record);
+
+    List<DeviceCheck> selectPageDeviceCheck();
+
+    List<DeviceCheck> searchDeviceCheckByDeviceCheckId(@Param("searchValueId") String searchValue);
+
+    List<DeviceCheck> searchDeviceCheckByDeviceCheckName(@Param("searchValueName") String searchValueLike);
 }

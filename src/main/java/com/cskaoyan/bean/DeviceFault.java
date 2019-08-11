@@ -15,6 +15,8 @@ public class DeviceFault {
 
     private String deviceFaultMaintenance;
 
+    private String deviceName;
+
     public String getDeviceFaultId() {
         return deviceFaultId;
     }
@@ -61,5 +63,13 @@ public class DeviceFault {
 
     public void setDeviceFaultMaintenance(String deviceFaultMaintenance) {
         this.deviceFaultMaintenance = deviceFaultMaintenance == null ? null : deviceFaultMaintenance.trim();
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
     }
 }

@@ -1,5 +1,6 @@
 package com.cskaoyan.mapper;
 
+import com.cskaoyan.bean.Device;
 import com.cskaoyan.bean.DeviceType;
 import com.cskaoyan.bean.DeviceTypeExample;
 import java.util.List;
@@ -27,4 +28,10 @@ public interface DeviceTypeMapper {
     int updateByPrimaryKeySelective(DeviceType record);
 
     int updateByPrimaryKey(DeviceType record);
+
+    List<DeviceType> selectPageDeviceType();
+
+    List<DeviceType> searchDeviceTypeByDeviceTypeId(@Param("searchValueId") String searchValue);
+
+    List<DeviceType> searchDeviceTypeByDeviceTypeName(@Param("searchValueName") String searchValueLike);
 }
