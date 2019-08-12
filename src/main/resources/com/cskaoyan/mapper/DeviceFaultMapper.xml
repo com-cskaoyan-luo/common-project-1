@@ -13,14 +13,14 @@
   </resultMap>
   <select id="selectPageDeviceFault" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List1" />
     from device_fault
     left join device on device_fault.device_id = device.device_id
   </select>
   <!--根据设备编号模糊查询-->
   <select id="searchDeviceFaultByDeviceFaultId" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List1" />
     from
     device_fault
     left join device on device_fault.device_id = device.device_id
@@ -29,7 +29,7 @@
   <!--根据设备名称模糊查询-->
   <select id="searchDeviceFaultByDeviceFaultName" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List1" />
     from
     device_fault
     left join device on device_fault.device_id = device.device_id
@@ -93,9 +93,13 @@
       </foreach>
     </where>
   </sql>
-  <sql id="Base_Column_List">
+  <sql id="Base_Column_List1">
     device_fault_id, device_fault.device_id, device_fault_cause, device_fault_detail, device_fault_date,
     device_fault_maintenance,device_name
+  </sql>
+  <sql id="Base_Column_List">
+    device_fault_id, device_id, device_fault_cause, device_fault_detail, device_fault_date,
+    device_fault_maintenance
   </sql>
   <select id="selectByExample" parameterType="com.cskaoyan.bean.DeviceFaultExample" resultMap="BaseResultMap">
     select

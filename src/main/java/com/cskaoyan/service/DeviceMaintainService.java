@@ -19,4 +19,6 @@ public interface DeviceMaintainService {
     List<DeviceMaintain> searchDeviceMaintainByDeviceMaintainId(String searchValue, int page, int rows);
 
     List<DeviceMaintain> searchDeviceMaintainByDeviceMaintainName(String searchValue, int page, int rows);
+
+    int updateNote(DeviceMaintain record);
 }

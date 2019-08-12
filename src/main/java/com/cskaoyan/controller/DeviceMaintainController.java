@@ -1,5 +1,6 @@
 package com.cskaoyan.controller;
 
+import com.cskaoyan.bean.Device;
 import com.cskaoyan.bean.DeviceMaintain;
 import com.cskaoyan.bean.DeviceMaintain;
 import com.cskaoyan.bean.PageBean;
@@ -139,6 +140,19 @@ public class DeviceMaintainController {
     @ResponseBody
     public Map updateByPrimaryKeySelective(DeviceMaintain record) {
         int i = deviceMaintainService.updateByPrimaryKeySelective(record);
+        HashMap<String, String> map = new HashMap<>();
+        int status = 200;
+        if (i == 1) {
+            map.put("status",status + "");
+        }
+        return map;
+    }
+
+    // 修改备注
+    @RequestMapping("deviceMaintain/update_note")
+    @ResponseBody
+    public Map updateNote(DeviceMaintain record) {
+        int i = deviceMaintainService.updateNote(record);
         HashMap<String, String> map = new HashMap<>();
         int status = 200;
         if (i == 1) {

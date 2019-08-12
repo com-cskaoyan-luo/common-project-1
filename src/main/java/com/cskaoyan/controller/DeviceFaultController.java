@@ -1,13 +1,13 @@
 package com.cskaoyan.controller;
 
+import com.cskaoyan.bean.*;
 import com.cskaoyan.bean.DeviceFault;
-import com.cskaoyan.bean.DeviceFault;
-import com.cskaoyan.bean.PageBean;
 import com.cskaoyan.service.DeviceFaultService;
 import com.cskaoyan.service.DeviceFaultService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -45,13 +45,46 @@ public class DeviceFaultController {
         return  pageBean;
     }
 
-    /*@RequestMapping("deviceType/get_data")
+    @RequestMapping("deviceFault/get_data")
     @ResponseBody
-    public List<DeviceType> getDataByDeviceType() {
+    public List<DeviceFault> getDataByDeviceFault() {
 
-        List<DeviceType> deviceTypes = deviceFaultService.getDataByDeviceType();
-        return deviceTypes;
-    }*/
+        List<DeviceFault> deviceFaults = deviceFaultService.getDataByDeviceFault();
+        return deviceFaults;
+    }
+
+    @RequestMapping("deviceFault/get/{id}")
+    @ResponseBody
+    public DeviceFault getDataByDeviceFault(@PathVariable String id) {
+
+        DeviceFault deviceFault = deviceFaultService.getDataByDeviceFaultId(id);
+        return deviceFault;
+    }
+    // 设备维修中的updateAll
+    @RequestMapping("deviceFault/update_all")
+    @ResponseBody
+    public Map updateAll(DeviceFault record) {
+        int i = deviceFaultService.updateAll(record);
+        HashMap<String, String> map = new HashMap<>();
+        int status = 200;
+        if (i == 1) {
+            map.put("status",status + "");
+        }
+        return map;
+    }
+
+    // 修改备注
+    @RequestMapping("deviceFault/update_note")
+    @ResponseBody
+    public Map updateNote(DeviceFault record) {
+        int i = deviceFaultService.updateNote(record);
+        HashMap<String, String> map = new HashMap<>();
+        int status = 200;
+        if (i == 1) {
+            map.put("status",status + "");
+        }
+        return map;
+    }
     /*
     @RequestMapping("DeviceFaultType/get_data")
     @ResponseBody

@@ -20,4 +20,12 @@ public interface DeviceFaultService {
     List<DeviceFault> searchDeviceFaultByDeviceFaultId(String searchValue, int page, int rows);
 
     List<DeviceFault> searchDeviceFaultByDeviceFaultName(String searchValue, int page, int rows);
+
+    List<DeviceFault> getDataByDeviceFault();
+
+    DeviceFault getDataByDeviceFaultId(String id);
+
+    int updateNote(DeviceFault record);
+
+    int updateAll(DeviceFault record);
 }

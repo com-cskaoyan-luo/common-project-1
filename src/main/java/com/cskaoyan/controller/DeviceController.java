@@ -7,6 +7,7 @@ import com.github.pagehelper.PageInfo;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -55,6 +56,29 @@ public class DeviceController {
         List<Device> devices = deviceService.getDataByDeviceList();
         return devices;
     }
+
+    /*测试使用的getdata，联调时取消*/
+    @RequestMapping("department/get_data")
+    @ResponseBody
+    public List<Department> getDataByDepartment() {
+        List<Department> departments = deviceService.getDataByDepartment();
+        return departments;
+    }
+    @RequestMapping("employee/get_data")
+    @ResponseBody
+    public List<Employee> getDataByEmployee() {
+        List<Employee> employees = deviceService.getDataByEmployee();
+        return employees;
+    }
+    /*测试的getdata到这里结束*/
+    @RequestMapping("deviceList/get/{id}")
+    @ResponseBody
+    public Device getDataByDeviceList(@PathVariable String id) {
+
+        Device deviceList = deviceService.getDataByDeviceListId(id);
+        return deviceList;
+    }
+
 
 
     // 增加判断(点击“增加”按钮)
@@ -115,6 +139,45 @@ public class DeviceController {
     @RequestMapping("deviceList/edit")
     public String edit() {
         return "deviceList_edit";
+    }
+
+    // 修改提交
+    @RequestMapping("deviceList/update")
+    @ResponseBody
+    public Map update(Device record) {
+        int i = deviceService.update(record);
+        HashMap<String, String> map = new HashMap<>();
+        int status = 200;
+        if (i == 1) {
+            map.put("status",status + "");
+        }
+        return map;
+    }
+
+    // 修改备注
+    @RequestMapping("deviceList/update_note")
+    @ResponseBody
+    public Map updateNote(Device record) {
+        int i = deviceService.updateNote(record);
+        HashMap<String, String> map = new HashMap<>();
+        int status = 200;
+        if (i == 1) {
+            map.put("status",status + "");
+        }
+        return map;
+    }
+
+    // 设备例检中设备信息的更改
+    @RequestMapping("deviceList/update_all")
+    @ResponseBody
+    public Map updateAll(Device record) {
+        int i = deviceService.updateAll(record);
+        HashMap<String, String> map = new HashMap<>();
+        int status = 200;
+        if (i == 1) {
+            map.put("status",status + "");
+        }
+        return map;
     }
 
     /**

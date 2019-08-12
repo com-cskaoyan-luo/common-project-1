@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cskaoyan.mapper.DeviceMapper">
-  <resultMap id="BaseResultMap" type="com.cskaoyan.bean.Device">
+  <resultMap id="deviceMap" type="com.cskaoyan.bean.Device">
     <id column="device_id" jdbcType="VARCHAR" property="deviceId" />
     <result column="device_name" jdbcType="VARCHAR" property="deviceName" />
     <result column="device_type_id" jdbcType="VARCHAR" property="deviceTypeId" />
@@ -72,9 +72,15 @@
       </foreach>
     </where>
   </sql>
-  <sql id="Base_Column_List">
-    device_id, device_name, device.device_type_id,device_type_name, device_status_id, device_status, device_purchase_date,
+  <sql id="Base_Column_List1">
+    device_id, device_name, device.device_type_id,device_type.device_type_name, device_status_id, device_status, device_purchase_date,
     device_purchase_price, device_manufacture_date, device_service_life, device_keeper_id,emp_name,
+    note
+  </sql>
+
+  <sql id="Base_Column_List">
+    device_id, device_name, device_type_id, device_status_id, device_status, device_purchase_date,
+    device_purchase_price, device_manufacture_date, device_service_life, device_keeper_id,
     note
   </sql>
 
@@ -122,7 +128,7 @@
   </insert>
 
   <!--Device 多表查询设备种类和保管人-->
-  <resultMap id="deviceMap" type="com.cskaoyan.bean.Device">
+  <resultMap id="BaseResultMap" type="com.cskaoyan.bean.Device">
     <id column="device_id" jdbcType="VARCHAR" property="deviceId" />
     <result column="device_name" jdbcType="VARCHAR" property="deviceName" />
     <result column="device_type_id" jdbcType="VARCHAR" property="deviceTypeId" />
@@ -137,43 +143,43 @@
     <result column="emp_name" jdbcType="VARCHAR" property="deviceKeeper" />
     <result column="note" jdbcType="VARCHAR" property="note" />
   </resultMap>
-  <select id="selectPageDevice" resultMap="deviceMap">
+  <select id="selectPageDevice" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List1" />
     from device
-    left join device_type typ on device.device_type_id = typ.device_type_id
-    left join employee e on device.device_keeper_id = e.emp_id
+    left join device_type on device.device_type_id = device_type.device_type_id
+    left join employee on device.device_keeper_id = employee.emp_id
   </select>
 
   <!--根据设备编号模糊查询-->
-  <select id="searchDeviceByDeviceId" resultMap="deviceMap">
+  <select id="searchDeviceByDeviceId" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List1" />
     from
     device
-    left join device_type typ on device.device_type_id = typ.device_type_id
-    left join employee e on device.device_keeper_id = e.emp_id
+    left join device_type on device.device_type_id = device_type.device_type_id
+    left join employee on device.device_keeper_id = employee.emp_id
     where device_id like #{searchValueId,jdbcType=VARCHAR}
   </select>
   <!--根据设备名称模糊查询-->
-  <select id="searchDeviceByDeviceName" resultMap="deviceMap">
+  <select id="searchDeviceByDeviceName" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List1" />
     from
     device
-    left join device_type typ on device.device_type_id = typ.device_type_id
-    left join employee e on device.device_keeper_id = e.emp_id
+    left join device_type on device.device_type_id = device_type.device_type_id
+    left join employee on device.device_keeper_id = employee.emp_id
     where device_name like #{searchValueName,jdbcType=VARCHAR}
   </select>
     <!--根据设备种类名称模糊查询-->
-    <select id="searchDeviceByDeviceTypeName" resultMap="deviceMap">
+    <select id="searchDeviceByDeviceTypeName" resultMap="BaseResultMap">
         select
-        <include refid="Base_Column_List" />
+        <include refid="Base_Column_List1" />
         from
         device
-        left join device_type typ on device.device_type_id = typ.device_type_id
-        left join employee e on device.device_keeper_id = e.emp_id
-        where device_type_name like #{searchValueTypeName,jdbcType=VARCHAR}
+      left join device_type on device.device_type_id = device_type.device_type_id
+      left join employee on device.device_keeper_id = employee.emp_id
+    where device_type_name like #{searchValueTypeName,jdbcType=VARCHAR}
     </select>
 
   <insert id="insertSelective" parameterType="com.cskaoyan.bean.Device">

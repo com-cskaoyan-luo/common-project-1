@@ -14,14 +14,14 @@
   </resultMap>
   <select id="selectPageDeviceMaintain" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List1" />
     from device_maintain
     left join employee e on device_maintain.device_maintain_emp_id = e.emp_id
   </select>
   <!--根据设备编号模糊查询-->
   <select id="searchDeviceMaintainByDeviceMaintainId" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List1" />
     from
     device_maintain
     left join employee e on device_maintain.device_maintain_emp_id = e.emp_id
@@ -30,7 +30,7 @@
   <!--根据设备名称模糊查询-->
   <select id="searchDeviceMaintainByDeviceMaintainName" resultMap="BaseResultMap">
     select
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List1" />
     from
     device_maintain
     left join employee e on device_maintain.device_maintain_emp_id = e.emp_id
@@ -94,9 +94,13 @@
       </foreach>
     </where>
   </sql>
-  <sql id="Base_Column_List">
+  <sql id="Base_Column_List1">
     device_maintain_id, device_fault_id, device_maintain_emp_id, device_maintain_date, 
     device_maintain_result, device_maintain_cost, note,emp_name
+  </sql>
+  <sql id="Base_Column_List">
+    device_maintain_id, device_fault_id, device_maintain_emp_id, device_maintain_date,
+    device_maintain_result, device_maintain_cost, note
   </sql>
   <select id="selectByExample" parameterType="com.cskaoyan.bean.DeviceMaintainExample" resultMap="BaseResultMap">
     select

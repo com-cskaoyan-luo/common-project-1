@@ -51,12 +51,14 @@ public class DeviceTypeController {
         return deviceType;
     }
 
-    @RequestMapping("DeviceTypeType/get_data")
+    @RequestMapping("deviceType/get_data")
     @ResponseBody
     public List<DeviceType> getDataByDeviceTypeList() {
         List<DeviceType> DeviceTypes = deviceTypeService.getDataByDeviceTypeList();
         return DeviceTypes;
     }
+
+
     /*
     @RequestMapping("department/get_data")
     @ResponseBody

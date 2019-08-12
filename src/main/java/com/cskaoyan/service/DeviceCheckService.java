@@ -1,5 +1,6 @@
 package com.cskaoyan.service;
 
+import com.cskaoyan.bean.Device;
 import com.cskaoyan.bean.DeviceCheck;
 import com.cskaoyan.bean.DeviceCheck;
 import com.cskaoyan.bean.DeviceType;
@@ -20,4 +21,6 @@ public interface DeviceCheckService {
     List<DeviceCheck> searchDeviceCheckByDeviceCheckId(String searchValue, int page, int rows);
 
     List<DeviceCheck> searchDeviceCheckByDeviceCheckName(String searchValue, int page, int rows);
+
+    int updateNote(DeviceCheck record);
 }

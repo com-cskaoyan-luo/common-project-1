@@ -146,6 +146,19 @@ public class DeviceCheckController {
         return map;
     }
 
+    // 修改备注
+    @RequestMapping("deviceCheck/update_note")
+    @ResponseBody
+    public Map updateNote(DeviceCheck record) {
+        int i = deviceCheckService.updateNote(record);
+        HashMap<String, String> map = new HashMap<>();
+        int status = 200;
+        if (i == 1) {
+            map.put("status",status + "");
+        }
+        return map;
+    }
+
     /**
      *  模糊查询之根据设备编号查询
      */

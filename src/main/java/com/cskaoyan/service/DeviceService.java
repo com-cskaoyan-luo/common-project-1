@@ -20,4 +20,16 @@ public interface DeviceService {
     List<Device> searchDeviceByDeviceName(String searchValue, int page, int rows);
 
     List<Device> searchDeviceByDeviceTypeName(String searchValue, int page, int rows);
+
+    Device getDataByDeviceListId(String id);
+
+    List<Department> getDataByDepartment();
+
+    List<Employee> getDataByEmployee();
+
+    int update(Device record);
+
+    int updateNote(Device record);
+
+    int updateAll(Device record);
 }
