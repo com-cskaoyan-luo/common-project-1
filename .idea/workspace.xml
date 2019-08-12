@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="127a8d16-c8a6-4b3e-9a39-31f270d9a459" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/config/SpringMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/config/SpringMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/config/SpringMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/config/SpringMvcConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/CustomController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
-              <caret line="121" column="31" lean-forward="true" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+              <caret line="134" column="31" lean-forward="true" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -284,6 +285,11 @@
               <item name="common-project-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="common-project-1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="common-project-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-project-1" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -296,7 +302,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/workSpace_javaEE/common-project-1/src/main/resources/com/cskaoyan/mapper/UnqualifyApplyMapper.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565603366857" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565610507138" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -412,7 +418,7 @@
       <workItem from="1565528873895" duration="9196000" />
       <workItem from="1565576692617" duration="16535000" />
       <workItem from="1565597062307" duration="1352000" />
-      <workItem from="1565598421643" duration="4926000" />
+      <workItem from="1565598421643" duration="5999000" />
     </task>
     <task id="LOCAL-00001" summary="8.09 李希双 质量检测 完成查询和编辑">
       <created>1565366122434</created>
@@ -425,7 +431,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119915000" />
+    <option name="totallyTimeSpent" value="120988000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,7 +462,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.71335506" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.5363735" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32681867" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -938,7 +944,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/CustomController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="121" column="31" lean-forward="true" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+          <caret line="134" column="31" lean-forward="true" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
         </state>
       </provider>
     </entry>
