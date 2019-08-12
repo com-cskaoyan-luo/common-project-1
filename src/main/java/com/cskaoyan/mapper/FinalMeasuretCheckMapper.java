@@ -3,6 +3,8 @@ package com.cskaoyan.mapper;
 import com.cskaoyan.bean.FinalMeasuretCheck;
 import com.cskaoyan.bean.FinalMeasuretCheckExample;
 import java.util.List;
+
+import com.cskaoyan.bean.UnqualifyApply;
 import org.apache.ibatis.annotations.Param;
 
 public interface FinalMeasuretCheckMapper {
@@ -28,4 +30,9 @@ public interface FinalMeasuretCheckMapper {
 
     int updateByPrimaryKey(FinalMeasuretCheck record);
     List<FinalMeasuretCheck> queryAllFinalMeasureCheck();
+
+
+    List<FinalMeasuretCheck> finalMeasureCheckIdSearch(String searchValue);
+
+    List<FinalMeasuretCheck> finalMeasureOrderIdSearch(String searchValue);
 }

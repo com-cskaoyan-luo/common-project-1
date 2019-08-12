@@ -27,4 +27,8 @@ public interface ProcessCountCheckMapper {
     int updateByPrimaryKeySelective(ProcessCountCheck record);
 
     int updateByPrimaryKey(ProcessCountCheck record);
+
+    List<ProcessCountCheck> queryAllPCountCheck();
+
+    List<ProcessCountCheck> processCountCheckIdSearch(@Param("id") String searchValue);
 }

@@ -1,0 +1,12 @@
+target/
+classes/
+*.properties
+*.class
+
+# Idea
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+*.ignore

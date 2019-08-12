@@ -25,10 +25,11 @@ public interface UnqualifyApplyMapper {
     int updateByExampleSelective(@Param("record") UnqualifyApply record, @Param("example") UnqualifyApplyExample example);
 
     int updateByExample(@Param("record") UnqualifyApply record, @Param("example") UnqualifyApplyExample example);
-
     int updateByPrimaryKeySelective(UnqualifyApply record);
-
     int updateByPrimaryKey(UnqualifyApply record);
     List<UnqualifyApply> queryAll();
     Employee queryemployee(@Param("id") String id);
+    List<UnqualifyApply> unqualifySearch(String name);
+
+    List<UnqualifyApply> unqualifySearchId(String searchValue);
 }

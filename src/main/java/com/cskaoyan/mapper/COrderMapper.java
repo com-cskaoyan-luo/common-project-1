@@ -27,4 +27,8 @@ public interface COrderMapper {
     int updateByPrimaryKeySelective(COrder record);
 
     int updateByPrimaryKey(COrder record);
+    COrder queryOrderById(@Param("id") String id);
+
+    List<COrder> queryOrderList();
+
 }

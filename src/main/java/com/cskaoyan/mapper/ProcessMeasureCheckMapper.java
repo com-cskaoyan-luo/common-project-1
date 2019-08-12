@@ -1,5 +1,6 @@
 package com.cskaoyan.mapper;
 
+import com.cskaoyan.bean.ProcessCountCheck;
 import com.cskaoyan.bean.ProcessMeasureCheck;
 import com.cskaoyan.bean.ProcessMeasureCheckExample;
 import java.util.List;
@@ -27,4 +28,10 @@ public interface ProcessMeasureCheckMapper {
     int updateByPrimaryKeySelective(ProcessMeasureCheck record);
 
     int updateByPrimaryKey(ProcessMeasureCheck record);
+
+    List<ProcessMeasureCheck> queryAllPMeasureCheck();
+
+    List<ProcessMeasureCheck> pMeasureCheckIdSearch(@Param("id") String searchValue);
+
+
 }

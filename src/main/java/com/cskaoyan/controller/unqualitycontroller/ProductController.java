@@ -3,7 +3,7 @@ package com.cskaoyan.controller.unqualitycontroller;
 import com.cskaoyan.bean.Product;
 
 import com.cskaoyan.bean.ProductExample;
-import com.cskaoyan.service.UnqualifyApply;
+import com.cskaoyan.service.unqualifyapply.UnqualifyApply;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

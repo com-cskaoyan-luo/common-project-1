@@ -27,6 +27,16 @@ public class ProcessCountCheck {
     private String result;
 
     private String note;
+    //自己加
+    private String empName;
+
+    public String getEmpName() {
+        return empName;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
 
     public String getpCountCheckId() {
         return pCountCheckId;
