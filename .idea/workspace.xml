@@ -7,309 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="127a8d16-c8a6-4b3e-9a39-31f270d9a459" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/ActiveUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/MaterialReceive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/MaterialReceiveExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/PageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/CustomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/DeviceCheckController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/DeviceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/DeviceFaultController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/DeviceMaintainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/DeviceTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/ManufactureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/MaterialConsumeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/MaterialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/MaterialReceiveController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/ProcessController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/TechnologyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/TechnologyPlanController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/TechnologyRequirementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/WorkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/MaterialReceiveMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/CustomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceCheckService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceCheckServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceFaultService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceFaultServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceMaintainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceMaintainServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/DeviceTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/CustomServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/ManufactureServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/MaterialConsumeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/MaterialReceiveServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/MaterialServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/ProcessServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/SysUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/TaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/TechnologyPlanServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/TechnologyRequirementServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/TechnologyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/Impl/WorkServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/ManufactureService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/MaterialConsumeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/MaterialReceiveService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/MaterialService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/ProcessService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/SysUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/TechnologyPlanService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/TechnologyRequirementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/TechnologyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/service/WorkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/MaterialReceiveMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/common_project_1_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/common_project_1_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/common-project-1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/COrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/COrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/DeviceCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/DeviceCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/DeviceFault.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/DeviceFault.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/DeviceMaintain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/DeviceMaintain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/FinalCountCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/FinalCountCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/FinalMeasuretCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/FinalMeasuretCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/Manufacture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/Manufacture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/MaterialConsume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/MaterialConsume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/TechnologyPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/TechnologyPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/TechnologyRequirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/TechnologyRequirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/TechnologyRequirementExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/TechnologyRequirementExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/UnqualifyApply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/UnqualifyApply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/bean/Work.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/COrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/CustomController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/DepartmentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/EmployeeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/MeasurementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/P_Measure_CheckController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/ProcessController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/QualityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/QualityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/TechnologyPlanController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/fMeasureCheckController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/f_count_checkController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/controller/unqualitycontroller/p_count_checkController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/COrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/COrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/CustomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/CustomMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceCheckMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceCheckMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceFaultMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceFaultMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceMaintainMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceMaintainMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/DeviceTypeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/ManufactureMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/ManufactureMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/SysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/SysUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/TaskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/TaskMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/TechnologyPlanMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/TechnologyPlanMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/TechnologyRequirementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/TechnologyRequirementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/WorkMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cskaoyan/mapper/WorkMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/COrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/COrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/CustomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/CustomMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceCheckMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceCheckMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceFaultMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceFaultMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceMaintainMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceMaintainMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/DeviceTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/FinalCountCheckMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/FinalCountCheckMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/FinalMeasuretCheckMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/FinalMeasuretCheckMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/ManufactureMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/ManufactureMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/ProcessMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/ProcessMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/ProductMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/TaskMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/TaskMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/TechnologyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/TechnologyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/UnqualifyApplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/UnqualifyApplyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/WorkMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cskaoyan/mapper/WorkMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialConsume_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialConsume_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialConsume_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialConsume_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialConsume_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialConsume_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialReceive_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialReceive_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialReceive_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialReceive_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialReceive_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/materialReceive_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/material_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/material_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/material_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/material_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/unqualify_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/unqualify_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/COrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/COrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/Device.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/DeviceCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/DeviceCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/DeviceFault.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/DeviceFault.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/DeviceMaintain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/DeviceMaintain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/FinalCountCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/FinalCountCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/FinalMeasuretCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/FinalMeasuretCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/Manufacture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/Manufacture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/MaterialConsume.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/MaterialConsume.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyPlan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyRequirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyRequirement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyRequirementExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyRequirementExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyRequirementExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyRequirementExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyRequirementExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/TechnologyRequirementExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/UnqualifyApply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/UnqualifyApply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/Work.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/bean/Work.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/config/SpringConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/COrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/CustomController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/DepartmentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/EmployeeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/MeasurementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/P_Measure_CheckController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/ProcessController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/QualityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/TechnologyPlanController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/fMeasureCheckController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/f_count_checkController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/controller/unqualitycontroller/p_count_checkController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/COrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/COrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/COrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/COrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/CustomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/CustomMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceCheckMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceCheckMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceCheckMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceCheckMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceFaultMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceFaultMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceFaultMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceFaultMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceMaintainMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceMaintainMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceMaintainMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceMaintainMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceTypeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceTypeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/DeviceTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/FinalCountCheckMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/FinalCountCheckMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/FinalMeasuretCheckMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/FinalMeasuretCheckMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/ManufactureMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/ManufactureMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/ManufactureMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/ManufactureMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/ProcessMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/ProcessMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/ProductMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/SysUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/TaskMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/TaskMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/TechnologyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/TechnologyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/TechnologyPlanMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/TechnologyPlanMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/TechnologyRequirementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/TechnologyRequirementMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/UnqualifyApplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/UnqualifyApplyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/WorkMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/WorkMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/WorkMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cskaoyan/mapper/WorkMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/COrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/COrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/Device.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/DeviceCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/DeviceCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/DeviceFault.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/DeviceFault.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/DeviceMaintain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/DeviceMaintain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/FinalCountCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/FinalCountCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/FinalMeasuretCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/FinalMeasuretCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/Manufacture.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/Manufacture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/MaterialConsume.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/MaterialConsume.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyPlan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyRequirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyRequirement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyRequirementExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyRequirementExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyRequirementExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyRequirementExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyRequirementExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/TechnologyRequirementExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/UnqualifyApply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/UnqualifyApply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/Work.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/bean/Work.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/config/SpringConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/COrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/CustomController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/DepartmentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/EmployeeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/MeasurementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/P_Measure_CheckController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/ProcessController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/QualityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/TechnologyPlanController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/fMeasureCheckController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/f_count_checkController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/controller/unqualitycontroller/p_count_checkController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/COrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/COrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/COrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/COrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/CustomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/CustomMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceCheckMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceCheckMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceCheckMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceCheckMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceFaultMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceFaultMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceFaultMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceFaultMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceMaintainMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceMaintainMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceMaintainMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceMaintainMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceTypeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceTypeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/DeviceTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/FinalCountCheckMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/FinalCountCheckMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/FinalMeasuretCheckMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/FinalMeasuretCheckMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/ManufactureMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/ManufactureMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/ManufactureMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/ManufactureMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/ProcessMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/ProcessMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/ProductMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/SysUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/TaskMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/TaskMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/TechnologyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/TechnologyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/TechnologyPlanMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/TechnologyPlanMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/TechnologyRequirementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/TechnologyRequirementMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/UnqualifyApplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/UnqualifyApplyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/WorkMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/WorkMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/WorkMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/classes/com/cskaoyan/mapper/WorkMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialConsume_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialConsume_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialConsume_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialConsume_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialConsume_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialConsume_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialReceive_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialReceive_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialReceive_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialReceive_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialReceive_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/materialReceive_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/material_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/material_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/material_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/material_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/unqualify_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/jsp/unqualify_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/erp-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -543,7 +242,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="269" />
     <option name="y" value="66" />
     <option name="width" value="1357" />
@@ -597,7 +296,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/workSpace_javaEE/common-project-1/src/main/resources/com/cskaoyan/mapper/UnqualifyApplyMapper.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565602372073" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565603366857" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -713,7 +412,7 @@
       <workItem from="1565528873895" duration="9196000" />
       <workItem from="1565576692617" duration="16535000" />
       <workItem from="1565597062307" duration="1352000" />
-      <workItem from="1565598421643" duration="4102000" />
+      <workItem from="1565598421643" duration="4926000" />
     </task>
     <task id="LOCAL-00001" summary="8.09 李希双 质量检测 完成查询和编辑">
       <created>1565366122434</created>
@@ -726,7 +425,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119091000" />
+    <option name="totallyTimeSpent" value="119915000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -747,7 +446,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.20095949" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.20095949" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4136808" />
@@ -757,7 +456,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32247558" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.71335506" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32681867" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
