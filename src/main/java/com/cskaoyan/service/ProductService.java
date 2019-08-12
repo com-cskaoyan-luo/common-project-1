@@ -22,4 +22,6 @@ public interface ProductService {
     List<Product> searchProductByType(String searchValue, int page, int rows);
 
     List<Product> queryProduct(int page, int rows);
+
+    int updateNote(String productId, String note);
 }

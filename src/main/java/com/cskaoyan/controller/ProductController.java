@@ -22,6 +22,19 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
+    //更新产品介绍
+    @RequestMapping("update_note")
+    @ResponseBody
+    public Map updateNote(String productId,String note){
+        int i = productService.updateNote(productId,note);
+        Map<String, String> map = new HashMap<>();
+        if(i == 1){
+            map.put("status","200");}
+        else {
+            map.put("msg","订单要求更新失败！");}
+        return map;
+    }
+
     //根据productType模糊查询
     @RequestMapping("search_product_by_productType")
     @ResponseBody

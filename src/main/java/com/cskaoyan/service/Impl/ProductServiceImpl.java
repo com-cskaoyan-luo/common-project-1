@@ -93,4 +93,14 @@ public class ProductServiceImpl implements ProductService {
         List<Product> products = productMapper.selectByExample(productExample);
         return products;
     }
+
+    //更新产品介绍
+    @Override
+    public int updateNote(String productId, String note) {
+        Product product = new Product();
+        product.setProductId(productId);
+        product.setNote(note);
+        int i = productMapper.updateByPrimaryKeySelective(product);
+        return i;
+    }
 }
