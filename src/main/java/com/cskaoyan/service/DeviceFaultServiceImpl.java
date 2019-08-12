@@ -3,7 +3,7 @@ package com.cskaoyan.service.impl;
 import com.cskaoyan.bean.*;
 import com.cskaoyan.mapper.DeviceFaultMapper;
 import com.cskaoyan.mapper.DeviceFaultMapper;
-import com.cskaoyan.mapper.DeviceTypeMapper;
+import com.cskaoyan.mapper.DeviceFaultMapper;
 import com.cskaoyan.service.DeviceFaultService;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +15,6 @@ import java.util.List;
 public class DeviceFaultServiceImpl implements DeviceFaultService {
     @Autowired
     DeviceFaultMapper deviceFaultMapper;
-    @Autowired
-    DeviceTypeMapper deviceTypeMapper;
 
     @Override
     public int updateByPrimaryKeySelective(DeviceFault record) {
@@ -27,8 +25,8 @@ public class DeviceFaultServiceImpl implements DeviceFaultService {
     /*@Override
     public List<DeviceFault> getDataByDeviceFault() {
         
-        DeviceTypeExample deviceTypeExample = new DeviceTypeExample();
-        List<DeviceType> deviceFaults = deviceTypeMapper.selectByExample(deviceTypeExample);
+        DeviceFaultExample deviceFaultExample = new DeviceFaultExample();
+        List<DeviceFault> deviceFaults = deviceFaultMapper.selectByExample(deviceFaultExample);
         return deviceFaults;
     }*/
 
@@ -72,5 +70,30 @@ public class DeviceFaultServiceImpl implements DeviceFaultService {
         List<DeviceFault> deviceFaults = deviceFaultMapper.searchDeviceFaultByDeviceFaultName(searchValueLike);
 
         return deviceFaults;
+    }
+
+    @Override
+    public List<DeviceFault> getDataByDeviceFault() {
+        DeviceFaultExample deviceFaultExample = new DeviceFaultExample();
+        List<DeviceFault> deviceFaults = deviceFaultMapper.selectByExample(deviceFaultExample);
+        return deviceFaults;
+    }
+
+    @Override
+    public DeviceFault getDataByDeviceFaultId(String id) {
+        DeviceFault deviceFault = deviceFaultMapper.selectByPrimaryKey(id);
+        return deviceFault;
+    }
+
+    @Override
+    public int updateNote(DeviceFault record) {
+        int update = deviceFaultMapper.updateByPrimaryKeySelective(record);
+        return update;
+    }
+
+    @Override
+    public int updateAll(DeviceFault record) {
+        int update = deviceFaultMapper.updateByPrimaryKey(record);
+        return update;
     }
 }

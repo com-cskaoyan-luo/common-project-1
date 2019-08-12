@@ -70,4 +70,10 @@ public class DeviceCheckServiceImpl implements DeviceCheckService {
 
         return deviceChecks;
     }
+
+    @Override
+    public int updateNote(DeviceCheck record) {
+        int update = deviceCheckMapper.updateByPrimaryKeySelective(record);
+        return update;
+    }
 }

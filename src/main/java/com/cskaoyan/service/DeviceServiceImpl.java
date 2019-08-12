@@ -7,6 +7,7 @@ import com.cskaoyan.mapper.DeviceTypeMapper;
 import com.cskaoyan.mapper.EmployeeMapper;
 import com.cskaoyan.service.DeviceService;
 import com.github.pagehelper.PageHelper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,10 @@ import java.util.List;
 public class DeviceServiceImpl implements DeviceService {
     @Autowired
     DeviceMapper deviceMapper;
+    @Autowired
+    DepartmentMapper departmentMapper;
+    @Autowired
+    EmployeeMapper employeeMapper;
 
     //根据设备id进行模糊查询
     @Override
@@ -41,6 +46,44 @@ public class DeviceServiceImpl implements DeviceService {
         List<Device> devices = deviceMapper.searchDeviceByDeviceTypeName(searchValueLike);
 
         return devices;
+    }
+
+    @Override
+    public Device getDataByDeviceListId(String id) {
+        Device device = deviceMapper.selectByPrimaryKey(id);
+        return device;
+    }
+
+    @Override
+    public List<Department> getDataByDepartment() {
+        DepartmentExample departmentExample = new DepartmentExample();
+        List<Department> departments = departmentMapper.selectByExample(departmentExample);
+        return departments;
+    }
+
+    @Override
+    public List<Employee> getDataByEmployee() {
+        EmployeeExample employeeExample = new EmployeeExample();
+        List<Employee> employees = employeeMapper.selectByExample(employeeExample);
+        return employees;
+    }
+
+    @Override
+    public int update(Device record) {
+        int update = deviceMapper.updateByPrimaryKey(record);
+        return update;
+    }
+
+    @Override
+    public int updateNote(Device record) {
+        int update = deviceMapper.updateByPrimaryKeySelective(record);
+        return update;
+    }
+
+    @Override
+    public int updateAll(Device record) {
+        int update = deviceMapper.updateByPrimaryKey(record);
+        return update;
     }
 
     @Override

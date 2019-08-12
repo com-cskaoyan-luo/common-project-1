@@ -73,4 +73,10 @@ public class DeviceMaintainServiceImpl implements DeviceMaintainService {
 
         return deviceMaintains;
     }
+
+    @Override
+    public int updateNote(DeviceMaintain record) {
+        int update = deviceMaintainMapper.updateByPrimaryKeySelective(record);
+        return update;
+    }
 }
