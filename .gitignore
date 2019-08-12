@@ -9,4 +9,4 @@ classes/
 *.iws
 .idea/
 out/
-*.gitignore
+.gitignore
