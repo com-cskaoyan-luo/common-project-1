@@ -27,4 +27,14 @@ public interface ManufactureMapper {
     int updateByPrimaryKeySelective(Manufacture record);
 
     int updateByPrimaryKey(Manufacture record);
+
+    List<Manufacture> selectPageManufacture();
+
+    List<Manufacture> selectPageManufactureById(@Param("searchValueId") String searchValue);
+
+    List<Manufacture> selectManufactureByOrderId(@Param("searchValueOrderId")String s);
+
+    List<Manufacture> selectManufactureByTechnologyName(@Param("searchValueTechnologyName")String s);
+
+    Manufacture selectManufactureByPrimaryKey(@Param("manufactureId") String id);
 }

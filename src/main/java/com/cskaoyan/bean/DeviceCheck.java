@@ -15,6 +15,10 @@ public class DeviceCheck {
 
     private String deviceCheckFaultId;
 
+    private String deviceName;
+
+    private String deviceCheckEmp;
+
     public String getDeviceCheckId() {
         return deviceCheckId;
     }
@@ -61,5 +65,21 @@ public class DeviceCheck {
 
     public void setDeviceCheckFaultId(String deviceCheckFaultId) {
         this.deviceCheckFaultId = deviceCheckFaultId == null ? null : deviceCheckFaultId.trim();
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
+    }
+
+    public String getDeviceCheckEmp() {
+        return deviceCheckEmp;
+    }
+
+    public void setDeviceCheckEmp(String deviceCheckEmp) {
+        this.deviceCheckEmp = deviceCheckEmp;
     }
 }

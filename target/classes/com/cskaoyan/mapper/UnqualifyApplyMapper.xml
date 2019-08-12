@@ -11,38 +11,6 @@
     <result column="apply_date" jdbcType="TIMESTAMP" property="applyDate" />
     <result column="note" jdbcType="VARCHAR" property="note" />
   </resultMap>
-  <resultMap id="queryMap" type="com.cskaoyan.bean.UnqualifyApply">
-    <result column="unqualify_apply_id"  property="unqualifyApplyId"/>
-    <result column="product_id"  property="productId"/>
-    <result column="unqualify_item"  property="unqualifyItem"/>
-    <result column="unqualify_count"  property="unqualifyCount"/>
-    <result column="assembly_date"  property="assemblyDate"/>
-    <result column="apply_date"  property="applyDate"/>
-    <result column="emp_id"  property="empId"/>
-    <result column="note"  property="note"/>
-    <result column="emp_name" property="empName"/>
-    <result column="product_name" property="productName"/>
-  </resultMap>
-  <resultMap id="employee" type="com.cskaoyan.bean.Employee">
-    <result column="emp_id" property="empId"/>
-    <result column="emp_name" property="empName"/>
-    <result column="sex" property="sex"/>
-    <result column="id_code" property="idCode"/>
-    <result column="birthday" property="birthday"/>
-    <result column="join_date" property="joinDate"/>
-    <result column="status" property="status"/>
-    <result column="education" property="education"/>
-    <result column="degree" property="degree"/>
-    <result column="major" property="major"/>
-    <result column="graduate_school" property="graduateSchool"/>
-    <result column="education_form" property="educationForm"/>
-    <result column="department_id" property="departmentId"/>
-    <collection property="department" ofType="com.cskaoyan.bean.Department">
-      <result column="department_name" property="departmentName"/>
-      <result column="note" property="note"/>
-      <result column="department_id" property="departmentId"/>
-    </collection>
-  </resultMap>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -369,5 +337,6 @@
     </if>
 
   </select>
+
 
 </mapper>

@@ -1,6 +1,7 @@
 package com.cskaoyan.mapper;
 
 import com.cskaoyan.bean.DeviceMaintain;
+import com.cskaoyan.bean.DeviceMaintain;
 import com.cskaoyan.bean.DeviceMaintainExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
@@ -27,4 +28,10 @@ public interface DeviceMaintainMapper {
     int updateByPrimaryKeySelective(DeviceMaintain record);
 
     int updateByPrimaryKey(DeviceMaintain record);
+
+    List<DeviceMaintain> selectPageDeviceMaintain();
+
+    List<DeviceMaintain> searchDeviceMaintainByDeviceMaintainId(String searchValue);
+
+    List<DeviceMaintain> searchDeviceMaintainByDeviceMaintainName(String searchValueLike);
 }

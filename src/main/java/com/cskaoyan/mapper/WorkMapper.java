@@ -27,4 +27,16 @@ public interface WorkMapper {
     int updateByPrimaryKeySelective(Work record);
 
     int updateByPrimaryKey(Work record);
+
+    List<Work> selectPageWork();
+
+    List<Work> selectPageWorkById(@Param("searchValueId") String searchValue);
+
+    List<Work> selectPageWorkByProduct(@Param("searchValueProduct")String s);
+
+    List<Work> selectPageWorkByDevice(@Param("searchValueDevice")String s);
+
+    List<Work> selectPageWorkByProcess(@Param("searchValueProcess")String s);
+
+    Work selectWorkByPrimaryKey(@Param("workId") String id);
 }

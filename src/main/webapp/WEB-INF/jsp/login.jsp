@@ -36,8 +36,8 @@
 								   onFocus="this.className='input_all name_now';"
 								   onBlur="this.className='input_all name'" maxLength="24" />
 						</div>
-						<div id="username_span"style="display:none;padding-bottom:7px;">
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="userspan"></span>
+						<div style="margin-left:98px;">
+							<span id="userspan"></span>
 						</div>
 							
 					</div>
@@ -50,12 +50,12 @@
 								   onBlur="this.className='input_all password'" maxLength="24" />
 						</div>
 						
-						<div id="password_span"style="display:none;margin:0 0 0 0;padding:0 0 0 0;">
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="passwordspan"></span>
+						<div style="margin-left:98px;">
+							<span id="passwordspan"></span>
 						</div>
 	
 						<div style="margin-bottom:12px">
-							<div id="randiv" style="display:none;margin-left:98px;">
+							<div id="randiv" style="display:block;margin-left:98px;">
 							
 								验证码：<input id="randomcode" name="randomcode" size="8" /> <img
 									id="randomcode_img" src="${baseurl}validatecode.jsp" alt=""
@@ -104,21 +104,17 @@
 
 							if (display == 'none') {
 								if ($.trim(uname.val()) == "") {
-									$('#username_span').css('display','block');
 									$("#passwordspan").html("");
 									$("#userspan")
 											.html(
 													"<font color='red'>用户名不能为空！</font>");
 									uname.focus();
 								} else if ($.trim(pwd.val()) == "") {
-									$('#username_span').css('display','none');
-									$('#password_span').css('display','block');
 									$("#userspan").html("");
 									$("#passwordspan").html(
 											"<font color='red'>密码不能为空！</font>");
 									pwd.focus();
 								} else {
-									$('#password_span').css('display','none');
 									$("#userspan").html("");
 									$("#passwordspan").html("");
 									$
@@ -165,17 +161,20 @@
 								$("#errorspan").html("");
 								if ($.trim(uname.val()) == "") {
 									$("#passwordspan").html("");
+									$("#randomcode_span").html("");
 									$("#userspan")
 											.html(
 													"<font color='red'>用户名不能为空！</font>");
 									uname.focus();
 								} else if ($.trim(pwd.val()) == "") {
 									$("#userspan").html("");
+									$("#randomcode_span").html("");
 									$("#passwordspan").html(
 											"<font color='red'>密码不能为空！</font>");
 									pwd.focus();
 								} else if ($.trim(rcode.val()) == "") {
 									$("#userspan").html("");
+									$("#passwordspan").html("");
 									$("#randomcode_span")
 											.html(
 													"<font color='red'>验证码不能为空！</font>");

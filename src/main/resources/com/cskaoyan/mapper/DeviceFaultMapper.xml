@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cskaoyan.mapper.DeviceFaultMapper">
+  <!--多表查询 分页查询-->
   <resultMap id="BaseResultMap" type="com.cskaoyan.bean.DeviceFault">
     <id column="device_fault_id" jdbcType="VARCHAR" property="deviceFaultId" />
     <result column="device_id" jdbcType="VARCHAR" property="deviceId" />
@@ -8,7 +9,32 @@
     <result column="device_fault_detail" jdbcType="VARCHAR" property="deviceFaultDetail" />
     <result column="device_fault_date" jdbcType="TIMESTAMP" property="deviceFaultDate" />
     <result column="device_fault_maintenance" jdbcType="VARCHAR" property="deviceFaultMaintenance" />
+    <result column="device_name" jdbcType="VARCHAR" property="deviceName" />
   </resultMap>
+  <select id="selectPageDeviceFault" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List1" />
+    from device_fault
+    left join device on device_fault.device_id = device.device_id
+  </select>
+  <!--根据设备编号模糊查询-->
+  <select id="searchDeviceFaultByDeviceFaultId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List1" />
+    from
+    device_fault
+    left join device on device_fault.device_id = device.device_id
+    where device_fault_id like #{searchValueId,jdbcType=VARCHAR}
+  </select>
+  <!--根据设备名称模糊查询-->
+  <select id="searchDeviceFaultByDeviceFaultName" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List1" />
+    from
+    device_fault
+    left join device on device_fault.device_id = device.device_id
+    where device_name like #{searchValueName,jdbcType=VARCHAR}
+  </select>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -67,8 +93,12 @@
       </foreach>
     </where>
   </sql>
+  <sql id="Base_Column_List1">
+    device_fault_id, device_fault.device_id, device_fault_cause, device_fault_detail, device_fault_date,
+    device_fault_maintenance,device_name
+  </sql>
   <sql id="Base_Column_List">
-    device_fault_id, device_id, device_fault_cause, device_fault_detail, device_fault_date, 
+    device_fault_id, device_id, device_fault_cause, device_fault_detail, device_fault_date,
     device_fault_maintenance
   </sql>
   <select id="selectByExample" parameterType="com.cskaoyan.bean.DeviceFaultExample" resultMap="BaseResultMap">

@@ -11,17 +11,6 @@
     <result column="result" jdbcType="VARCHAR" property="result" />
     <result column="note" jdbcType="VARCHAR" property="note" />
   </resultMap>
-  <resultMap id="MeasureCheckMap" type="com.cskaoyan.bean.FinalMeasuretCheck">
-    <result column="f_measure_check_id" property="fMeasureCheckId"/>
-    <result column="order_id" property="orderId"/>
-    <result column="check_item" property="checkItem"/>
-    <result column="cdate" property="cdate"/>
-    <result column="measure_data" property="measureData"/>
-    <result column="emp_id" property="empId"/>
-    <result column="result" property="result"/>
-    <result column="note" property="note"/>
-    <result column="emp_name" property="empName"/>
-  </resultMap>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -319,4 +308,5 @@
       </where>
     </if>
   </select>
+
 </mapper>

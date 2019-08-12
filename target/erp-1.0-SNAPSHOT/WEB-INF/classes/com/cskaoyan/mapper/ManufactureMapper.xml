@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cskaoyan.mapper.ManufactureMapper">
+
+  <!--多表分次查询,根据生产派工id-->
+  <select id="selectManufactureByPrimaryKey" resultMap="manufactureMap">
+    select
+    <include refid="Base_Column_List" />
+    from
+    manufacture
+    where manufacture_sn = #{manufactureId,jdbcType=VARCHAR}
+  </select>
+
+  <resultMap id="manufactureOrderIdMap" type="com.cskaoyan.bean.Manufacture">
+    <id column="manufacture_sn" jdbcType="VARCHAR" property="manufactureSn" />
+    <result column="order_id" jdbcType="VARCHAR" property="orderId" />
+    <result column="technology_id" jdbcType="VARCHAR" property="technologyId" />
+    <result column="launch_quantity" jdbcType="INTEGER" property="launchQuantity" />
+    <result column="begin_date" jdbcType="TIMESTAMP" property="beginDate" />
+    <result column="end_date" jdbcType="TIMESTAMP" property="endDate" />
+    <association property="cOrder" javaType="com.cskaoyan.bean.COrder">
+      <id column="order_id" jdbcType="VARCHAR" property="orderId"/>
+    </association>
+    <association property="technology" javaType="com.cskaoyan.bean.Technology">
+      <id column="technology_id" jdbcType="VARCHAR" property="technologyId"/>
+      <result column="technology_name" jdbcType="VARCHAR" property="technologyName"/>
+    </association>
+  </resultMap>
+
+  <!--根据TechnologyName模糊查询-->
+  <select id="selectManufactureByTechnologyName" resultMap="manufactureOrderIdMap">
+    select
+    m.manufacture_sn, m.order_id, m.technology_id, m.launch_quantity, m.begin_date, m.end_date,
+    o.order_id,t.technology_id,t.technology_name
+    from
+    manufacture m,c_order o,technology t
+    where t.technology_name like #{searchValueTechnologyName}
+    and m.order_id = o.order_id and m.technology_id = t.technology_id
+  </select>
+
+  <!--根据OrderId模糊查询-->
+  <select id="selectManufactureByOrderId" resultMap="manufactureOrderIdMap">
+    select
+    m.manufacture_sn, m.order_id, m.technology_id, m.launch_quantity, m.begin_date, m.end_date,
+    o.order_id,t.technology_id,t.technology_name
+    from
+    manufacture m,c_order o,technology t
+    where o.order_id like #{searchValueOrderId}
+    and m.order_id = o.order_id and m.technology_id = t.technology_id
+  </select>
+
+  <!--根据id模糊查询-->
+  <select id="selectPageManufactureById" resultMap="manufactureMap">
+    select
+    <include refid="Base_Column_List" />
+    from
+    manufacture
+    where manufacture_sn like #{searchValueId,jdbcType=VARCHAR}
+  </select>
+  <resultMap id="manufactureMap" type="com.cskaoyan.bean.Manufacture">
+    <id column="manufacture_sn" jdbcType="VARCHAR" property="manufactureSn" />
+    <result column="order_id" jdbcType="VARCHAR" property="orderId" />
+    <result column="technology_id" jdbcType="VARCHAR" property="technologyId" />
+    <result column="launch_quantity" jdbcType="INTEGER" property="launchQuantity" />
+    <result column="begin_date" jdbcType="TIMESTAMP" property="beginDate" />
+    <result column="end_date" jdbcType="TIMESTAMP" property="endDate" />
+    <association property="cOrder" column="order_id"
+                 select="com.cskaoyan.mapper.COrderMapper.selectOrderById"/>
+    <association property="technology" column="technology_id"
+                 select="com.cskaoyan.mapper.TechnologyMapper.selectTechnologyById"/>
+  </resultMap>
+  <!--多表分次查询-->
+  <select id="selectPageManufacture" resultMap="manufactureMap">
+    select
+    <include refid="Base_Column_List" />
+    from
+    manufacture
+  </select>
   <resultMap id="BaseResultMap" type="com.cskaoyan.bean.Manufacture">
     <id column="manufacture_sn" jdbcType="VARCHAR" property="manufactureSn" />
     <result column="order_id" jdbcType="VARCHAR" property="orderId" />

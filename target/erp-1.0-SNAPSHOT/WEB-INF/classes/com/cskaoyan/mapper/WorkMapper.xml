@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cskaoyan.mapper.WorkMapper">
+
+  <!--多表分次查询,根据作业id-->
+  <select id="selectWorkByPrimaryKey" resultMap="WorkMap">
+    select
+    <include refid="Base_Column_List" />
+    from
+    work
+    where work_id = #{workId,jdbcType=VARCHAR}
+  </select>
+  <resultMap id="workProductMap" type="com.cskaoyan.bean.Work">
+    <id column="work_id" jdbcType="VARCHAR" property="workId" />
+    <result column="process_number" jdbcType="VARCHAR" property="processNumber" />
+    <result column="product_id" jdbcType="VARCHAR" property="productId" />
+    <result column="process_id" jdbcType="VARCHAR" property="processId" />
+    <result column="device_id" jdbcType="VARCHAR" property="deviceId" />
+    <result column="rating" jdbcType="INTEGER" property="rating" />
+    <association property="process" javaType="com.cskaoyan.bean.Process">
+      <id column="process_id" jdbcType="VARCHAR" property="processId"/>
+    </association>
+    <association property="device" javaType="com.cskaoyan.bean.Device">
+      <id column="device_id" jdbcType="VARCHAR" property="deviceId"/>
+      <result column="device_name" jdbcType="VARCHAR" property="deviceName"/>
+    </association>
+    <association property="product" javaType="com.cskaoyan.bean.Product">
+      <id column="product_id" jdbcType="VARCHAR" property="productId" />
+      <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    </association>
+  </resultMap>
+
+  <!--根据Process模糊查询-->
+  <select id="selectPageWorkByProcess" resultMap="workProductMap">
+    select
+    w.work_id, w.process_number, w.product_id, w.process_id, w.device_id, w.rating,
+    pr.process_id,d.device_id,d.device_name,p.product_id,p.product_name
+    from
+    work w,device d,product p,process pr
+    where pr.process_id like #{searchValueProcess}
+    and w.device_id = d.device_id and w.process_id = pr.process_id and w.product_id = p.product_id
+  </select>
+
+  <!--根据Device模糊查询-->
+  <select id="selectPageWorkByDevice" resultMap="workProductMap">
+    select
+    w.work_id, w.process_number, w.product_id, w.process_id, w.device_id, w.rating,
+    pr.process_id,d.device_id,d.device_name,p.product_id,p.product_name
+    from
+    work w,device d,product p,process pr
+    where d.device_name like #{searchValueDevice}
+    and w.device_id = d.device_id and w.process_id = pr.process_id and w.product_id = p.product_id
+  </select>
+
+  <!--根据Product模糊查询-->
+  <select id="selectPageWorkByProduct" resultMap="workProductMap">
+    select
+    w.work_id, w.process_number, w.product_id, w.process_id, w.device_id, w.rating,
+    pr.process_id,d.device_id,d.device_name,p.product_id,p.product_name
+    from
+    work w,device d,product p,process pr
+    where p.product_name like #{searchValueProduct}
+    and w.device_id = d.device_id and w.process_id = pr.process_id and w.product_id = p.product_id
+  </select>
+
+  <!--根据id模糊查询-->
+  <select id="selectPageWorkById" resultMap="WorkMap">
+    select
+    <include refid="Base_Column_List" />
+    from
+    work
+    where work_id like #{searchValueId,jdbcType=VARCHAR}
+  </select>
+  <resultMap id="WorkMap" type="com.cskaoyan.bean.Work">
+    <id column="work_id" jdbcType="VARCHAR" property="workId" />
+    <result column="process_number" jdbcType="VARCHAR" property="processNumber" />
+    <result column="product_id" jdbcType="VARCHAR" property="productId" />
+    <result column="process_id" jdbcType="VARCHAR" property="processId" />
+    <result column="device_id" jdbcType="VARCHAR" property="deviceId" />
+    <result column="rating" jdbcType="INTEGER" property="rating" />
+    <association property="process" column="process_id"
+                 select="com.cskaoyan.mapper.ProcessMapper.selectProcessById"/>
+    <association property="device" column="device_id"
+                 select="com.cskaoyan.mapper.DeviceMapper.selectDeviceById"/>
+    <association property="product" column="product_id"
+                 select="com.cskaoyan.mapper.ProductMapper.selectProductById"/>
+  </resultMap>
+  <!--多表分次查询-->
+  <select id="selectPageWork" resultMap="WorkMap">
+    select
+    <include refid="Base_Column_List" />
+    from
+    work
+  </select>
   <resultMap id="BaseResultMap" type="com.cskaoyan.bean.Work">
     <id column="work_id" jdbcType="VARCHAR" property="workId" />
     <result column="process_number" jdbcType="VARCHAR" property="processNumber" />

@@ -27,7 +27,7 @@
 	        <tr>
 	            <td>消耗数量:</td>
 	            <td>
-					<input class="easyui-numberbox" type="text" name="consumeAmount"
+					<input class="easyui-numberbox" name="consumeAmount"
 						   data-options="min:1,max:99999999,precision:0,required:true" style="width: 160px;"/>
 				</td>
 	        </tr>
