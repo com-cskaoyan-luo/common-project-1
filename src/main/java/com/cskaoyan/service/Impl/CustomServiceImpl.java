@@ -82,4 +82,14 @@ public class CustomServiceImpl implements CustomService {
         List<Custom> customs = customMapper.selectByExample(customExample);
         return customs;
     }
+
+    //更新客户备注
+    @Override
+    public int updateNote(String customId, String note) {
+        Custom custom = new Custom();
+        custom.setCustomId(customId);
+        custom.setNote(note);
+        int i = customMapper.updateByPrimaryKeySelective(custom);
+        return i;
+    }
 }

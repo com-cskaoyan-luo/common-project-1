@@ -23,6 +23,19 @@ public class CustomController {
     @Autowired
     CustomService customService;
 
+    //更新客户要求
+    @RequestMapping("update_note")
+    @ResponseBody
+    public Map updateNote(String customId,String note){
+        int i = customService.updateNote(customId,note);
+        Map<String, String> map = new HashMap<>();
+        if(i == 1){
+            map.put("status","200");}
+        else {
+            map.put("msg","订单要求更新失败！");}
+        return map;
+    }
+
     //根据customName模糊查询
     @RequestMapping("search_custom_by_customName")
     @ResponseBody

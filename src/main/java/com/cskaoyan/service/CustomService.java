@@ -20,4 +20,6 @@ public interface CustomService {
     List<Custom> searchCustomById(String searchValue, int page, int rows);
 
     List<Custom> searchCustomByName(String searchValue, int page, int rows);
+
+    int updateNote(String customId, String note);
 }
